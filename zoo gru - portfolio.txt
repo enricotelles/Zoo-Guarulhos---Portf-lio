@@ -1,0 +1,289 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+   <meta charset="UTF-8">
+    <title>Zoológico de Guarulhos</title>
+    <style>
+.destaque-total {
+  background-color: #d0ebff; /* azul bem clarinho */
+  color: #003366;            /* azul escuro para contraste */
+  font-size: 24px;
+  font-weight: bold;
+  font-family: 'Georgia', serif; /* letra elegante */
+  text-align: center;
+  padding: 20px;
+  width: 100%;
+  box-sizing: border-box;
+  margin: 0;
+}
+.retangulo-destaque {
+  background-color: #ffffff;   /* fundo branco */
+  border: 2px solid #99c2ff;   /* borda azul clara */
+  border-radius: 10px;         /* cantos arredondados */
+  padding: 20px;               /* espaço interno */
+  margin: 20px auto;           /* espaçamento externo e centralização */
+  max-width: 800px;            /* largura máxima */
+  font-size: 20px;
+  color: #003366;              /* azul escuro no texto */
+  font-family: 'Georgia', serif;
+  box-shadow: 2px 2px 8px rgba(0,0,0,0.1); /* sombra leve */
+}
+.galeria-linha {
+  display: flex;
+  justify-content: center;
+  gap: 20px; /* espaço entre os blocos */
+  flex-wrap: wrap; /* se não couber, quebra para a linha de baixo */
+  margin: 20px 0;
+}
+
+.bloco-imagem {
+  text-align: center;
+  width: 200px;
+}
+
+.bloco-imagem img {
+  width: 100%;
+  height: auto;
+  border-radius: 8px;
+  box-shadow: 0 0 6px rgba(0,0,0,0.1);
+}
+
+.bloco-imagem p {
+  background-color: #ffffff;
+  border: 2px solid #99c2ff;
+  border-radius: 10px;
+  padding: 8px;
+  color: #003366;
+  font-family: 'Georgia', serif;
+  font-size: 14px;
+  margin-top: 8px;
+}
+.cabecalho {
+  background-color: #2c7be5;
+  color: white;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 15px 30px;
+  flex-wrap: wrap;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+}
+
+.logo h1 {
+  margin: 0;
+  font-size: 24px;
+}
+
+.menu ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  gap: 15px;
+}
+
+.menu a {
+  text-decoration: none;
+  color: white;
+  font-weight: bold;
+  transition: color 0.3s;
+}
+
+.menu a:hover {
+  color: #cce4ff;
+}
+
+
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f9f9f9;
+            text-align: center; /* Centraliza todos os textos */
+        }
+
+        header {
+            background-color: #3a6ea5;
+            color: white;
+            padding: 20px;
+        }
+
+        section {
+            padding: 20px;
+        }
+
+        .titulo-principal {
+            font-size: 36px;
+            color: #ffffff;
+        }
+
+        .titulo-azul {
+            color: #2c7be5;
+        }
+
+        .titulo-verde {
+            color: #28a745;
+        }
+
+        .titulo-rosa {
+            color: #e83e8c;
+        }
+
+        .subtitulo-roxo {
+            color: #6f42c1;
+        }
+
+        .subtitulo-laranja {
+            color: #fd7e14;
+        }
+
+        .subtitulo-vermelho {
+            color: #dc3545;
+        }
+
+        .animal {
+            width: 300px;
+            height: auto;
+            border-radius: 8px;
+            box-shadow: 0 0 8px rgba(0, 0, 0, 0.2);
+            margin: 10px auto;
+        }
+
+        .bloco-animal {
+            margin: 30px 0;
+        }
+
+        footer {
+            background-color: #3a6ea5;
+            color: white;
+            text-align: center;
+            padding: 10px;
+        }
+
+        p {
+            max-width: 800px;
+            margin: 0 auto 15px auto;
+        }
+body {
+    background-color: #e0f7fa; /* Azul claro */
+    font-family: Arial, sans-serif;
+    text-align: center;
+    margin: 0;
+    padding: 0;
+}
+    </style>
+</head>
+<body>
+<header class="cabecalho">
+  <div class="logo">
+    <!-- Se quiser colocar uma imagem de logo, substitua o texto abaixo -->
+    <h1>Zoológico de Guarulhos</h1>
+  </div>
+  <nav class="menu">
+    <ul>
+      <li><a href="#sobre">Sobre</a></li>
+      <li><a href="#aves">Aves</a></li>
+      <li><a href="#repteis">Répteis</a></li>
+      <li><a href="#mamiferos">Mamíferos</a></li>
+      <li><a href="#contato">Contato</a></li>
+    </ul>
+  </nav>
+</header>
+
+    <header>
+        <h1 class="titulo-principal">Zoológico de Guarulhos</h1>
+        <p>Bem-vindo ao novo site do Zoológico!</p>
+    </header>
+
+    <section class="info">
+        <h2 class="titulo-azul">Sobre o Zoológico</h2>
+        <div class="destaque-total">
+ Visite o Zoológico de Guarulhos e descubra espécies incríveis!
+</div>
+<div class="bloco-endereco">
+  <h3>📍 Endereço</h3>
+  <p>Rua Dona Glória Pagnoncelli, s/n<br>Guarulhos - SP, Brasil</p>
+</div>
+<div class="bloco-endereco">
+  <h3>📍 Horários</h3>
+  <p>Funcionamento: Terça a Domingo, das 9h às 17h.</p>
+</div>
+    </section> 
+ <section class="galeria">
+<div class="destaque-total">
+ Animais por Categoria
+</div>
+            <div class="bloco-animal">
+            <h1 class="subtitulo-roxo">Aves</h3>
+<div class="retangulo-destaque">
+  As aves do zoológico incluem araras, papagaios e tucanos, que encantam com suas cores e sons.
+</div>
+<div class="galeria-linha">
+  <div class="bloco-imagem">
+    <img src="https://www.zoodamaia.pt/images/animais/aves/Diamanete-de-gold.jpg" alt="Ave 1">
+    <p>Diamante de Gould</p>
+  </div>
+
+  <div class="bloco-imagem">
+    <img src="https://www.zoodamaia.pt/images/animais/aves/catatuaca.jpg" alt="Ave 2">
+    <p>Catatua de Crista Amarela</p>
+  </div>
+
+  <div class="bloco-imagem">
+    <img src="https://www.zoodamaia.pt/images/animais/aves/araraazulamarela.jpg" alt="Ave 3">
+    <p>Arara Azul</p>
+  </div>
+</div>
+        <div class="bloco-animal">
+            <h3 class="subtitulo-laranja">Répteis</h3>
+<div class="retangulo-destaque">
+  Os répteis como cobras e jacarés são protegidos e observados com segurança e curiosidade.
+</div>
+ <div class="galeria-linha">
+  <div class="bloco-imagem">
+    <img src="https://www.zoodamaia.pt/images/animais/repteis/caimao02-8a4c0cad72.jpg" alt="Ave 1">
+    <p>Caimão</p>
+  </div>
+
+  <div class="bloco-imagem">
+    <img src="https://www.zoodamaia.pt/images/animais/repteis/boacubana02-ab53ad9e5f.jpg" alt="Ave 2">
+    <p>cobra Boa Cubana</p>
+  </div>
+
+  <div class="bloco-imagem">
+    <img src="https://www.zoodamaia.pt/images/animais/repteis/anaconda_aarela.jpg" alt="Ave 3">
+    <p>Anaconda Amarela</p>
+  </div>
+</div>           
+           
+        </div>
+
+        <div class="bloco-animal">
+            <h3 class="subtitulo-vermelho">Mamíferos</h3>
+<div class="retangulo-destaque">
+  Entre os mamíferos, temos leões, macacos e ursos, que vivem em ambientes semelhantes ao natural.
+</div>
+                  <div class="bloco-animal">
+           
+ <div class="galeria-linha">
+  <div class="bloco-imagem">
+    <img src="https://www.zoodamaia.pt/images/animais/mamiferos/tigre.jpg" alt="Mamífero" alt="Ave 1">
+    <p>Tigre</p>
+  </div>
+
+  <div class="bloco-imagem">
+    <img src="https://www.zoodamaia.pt/images/animais/mamiferos/lemure_cauda_anelar.jpg" alt="Mamífero" alt="Ave 2">
+    <p>Lémure De Cauda Anelada</p>
+  </div>
+
+  <div class="bloco-imagem">
+    <img src="https://www.zoodamaia.pt/images/animais/mamiferos/gibao02-39df1a9935.jpg" alt="Mamífero" alt="Ave 3">
+    <p>Gibão de Mãos Brancas
+</div>           
+        </div>
+    </section>
+    <footer>
+        <p>Desenvolvido por Enrico Telles - Portfólio de Programação</p>
+    </footer>
+</body>
+</html>
